@@ -1,0 +1,410 @@
+  <!--Navigation--> 	
+
+<!--	<div id = "nav"> -->
+   
+<!--Logo-->
+<!--      <ul class = "navbar col-md-4" id = "logo">
+          <li>YoungEats</li>
+      </ul> 
+
+
+		</div> 
+
+-->  
+      <!--Modal Widow-->
+<!-- <div id="modal">
+  <div id="dialog" class="window">
+    <div class="contents">
+        <h3>Log In</h3>
+        <form style = "color: black; font-size: 100%; font-family: 'Josefin Slab', serif;">
+          <table>
+            <tr>
+              <td>Email</td>
+              <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td><input type = "password" name = "password"></td>
+            </tr>
+            </table>
+                <input type = "submit" value = "Log In!" style = "font-family: 'WisdomScriptAJ'; font-size: 90%; color: white; background-color: #373D6B; border = none;">
+          </form>
+        
+        <hr>
+        <h4 style = "color: black; font-size: 100%; font-family: 'Josefin Slab', serif;">Not a member?<a href = ""> Sign up!</a></h4>
+
+        <a href="#" class="close" style = "font-family: 'Josefin Slab';">Close</a>
+    </div>
+  </div>
+</div> -->
+<div id="modal2">
+  <div id = "dialog2" class = "window">
+    <div class = "contents" style = "text-align:center;">
+      <h3><a style = "text-align:center; vertical-align:center; font-family: 'WisdomScriptAJ'; color:#248891; text-decoration:none; font-size:200%" href= "foodItemSearch.html">Search by food</a></h3>
+      <p style = "text-align:center; font-family:'WisdomScriptAJ'; color:#248891; font-size:150%">-or-</p>
+      <h3><a style = "text-align:center; vertical-align:center; font-family: 'WisdomScriptAJ'; color:#248891; text-decoration:none; font-size:200%" href = "mealSelect.html">Search by meal</a></h3>
+      <hr>
+      <a href="#" class="close2" style = "font-family: 'Josefin Slab'; color: gray; size: 100%; text-decoration:none">Close</a>
+
+    </div>
+  </div>
+</div>
+
+<div id = "recipes" class = "col-sm-3">
+    <h4>Our recipes</h4>
+    <hr>
+    <img id = "expic" src = "http://find-recipes.com/images/meals/landolakes_italianbeefroast-fall.jpg" alt = "...">
+    <p>Lorem ipsum dolor sit amet, everti mandamus est in, sit ne nonumes praesent, pro modus dicant accusam ei. Ei sed aeterno sanctus maiorum, est meis evertitur consectetuer no, duo noster elaboraret id. Illud mucius te nec. Vis erant constituto in, per ex purto splendide, no persius expetendis pro.</p>
+</div>
+
+<div id = "reviews" class = "col-sm-3">
+  <h4>Feedback</h4>
+  <hr>
+  <img id = "expic" src = "http://find-recipes.com/images/meals/landolakes_koreantacos-fall.jpg" alt = "...">
+  <p>Lorem ipsum dolor sit amet, everti mandamus est in, sit ne nonumes praesent, pro modus dicant accusam ei. Ei sed aeterno sanctus maiorum, est meis evertitur consectetuer no, duo noster elaboraret id. Illud mucius te nec. Vis erant constituto in, per ex purto splendide, no persius expetendis pro.</p>
+</div>
+
+<div id = "contact" class = "col-sm-3">
+  <h4>Contact Us</h4>
+  <hr>
+  <img id = "expic" src = "http://www.twodognursery.com/Other-veggies/Shishito%20Pepper.jpg" alt = "...">
+  <p>Lorem ipsum dolor sit amet, everti mandamus est in, sit ne nonumes praesent, pro modus dicant accusam ei. Ei sed aeterno sanctus maiorum, est meis evertitur consectetuer no, duo noster elaboraret id. Illud mucius te nec. Vis erant constituto in, per ex purto splendide, no persius expetendis pro.</p>
+</div>
+
+<div id = "footer" class = "col-lg-12" style = "background-color:#373D6B;"></div>
+
+<h1 style = "text-align: center;font-family: WisdomScriptAJ;
+	font-size:	200%;text-decoration:none;color:#248891;font-weight:bold;">I'm hungry for...</h1>
+		<div class="chooseFilters">
+			<div class="container">
+  					<ul style = "text-align: center">
+  						<a href='mealSort2.html'><li>Breakfast</li></a>
+  						<a href='mealSort2.html'><li>&nbsp;Lunch &nbsp;</li></a>
+  						<a href='mealSort2.html'><li>&nbsp;Dinner&nbsp;</li></a>
+  						<a href='mealSort2.html'><li>&nbsp;&nbsp;Snack&nbsp;&nbsp;</li></a>
+  					</ul>
+			</div>
+		</div>	
+	
+  
+  	<div class = "header">
+			Search by Ingredient 
+	</div>
+		  <!--Navigation--> 
+
+<div class= "search">
+
+	<div class = "box">
+		<div class = "box1">
+			<div class="sectionImg" onclick="viewInnerList('dairy')"></div>
+			<div class = "rowHeader"> Dairy</div>
+		</div>
+		
+		<div id="dairy" class="sectionContainerHide" style = "color:#1B646B; font-weight:bold;">
+		<div class = "row"> 
+			<input type="checkbox" value="Checkbox">
+			<div id = "all" class = "rowlabel"> All </div>	
+		</div>
+		<div class = "row"> 
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Milk </div>	
+		</div>
+		
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">	
+			<div class = "rowlabel"> Cheese</div>
+		</div>
+		
+		<div class = "row">	
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Cream</div>
+		</div>
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Yogurt</div>
+		</div>
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Butter</div>
+		</div>
+		</div>
+	</div>	
+	
+	<div class = "box">
+		<div class = "row"> 
+			<div class="sectionImg" onclick="viewInnerList('protein')"></div>
+			<div class = "rowHeader"> Protein</div>
+		</div>
+
+		<div id="protein" class = "sectionContainerHide" style = "color:#1B646B; font-weight:bold;">
+		<div class = "row"> 
+			<input type="checkbox" value="Checkbox">
+			<div id="all" class = "rowlabel"> All </div>	
+		</div>
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Beef</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Chicken</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Eggs</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Pork</div>
+		</div>
+		
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel" > Lamb</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Nuts</div>	
+		</div>	
+		</div>
+	</div>
+	<div class = "box">
+		<div class = "row"> 
+			<div class="sectionImg" onclick="viewInnerList('spices')"></div>
+			<div class = "rowHeader"> Spices</div>
+		</div>
+
+		<div id= "spices" class = "sectionContainerHide"style = "color:#1B646B; font-weight:bold;">
+		<div class = "row"> 
+			<input type="checkbox" value="Checkbox">
+			<div id = "all" class = "rowlabel" onclick="checkInnerList()"> All </div>	
+		</div>
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Sugar</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Salt</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Cinnamon</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Pepper</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel" > Cumin</div>
+		</div>
+		
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Garlic</div>	
+		</div>
+		</div>
+	</div>
+
+	<div class = "box">
+		<div class = "row"> 
+			<div class="sectionImg" onclick="viewInnerList('vegetables')"></div>			
+			<div class = "rowHeader"> Vegetables</div>	
+		</div>
+
+		<div id = "vegetables" class = "sectionContainerHide" style = "color:#1B646B; font-weight:bold;">
+		<div class = "row"> 
+			<input type="checkbox" value="Checkbox">
+			<div id="all" class = "rowlabel"> All </div>	
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Tomato</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Cucumber</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Lettuce</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Broccoli</div>
+		</div>
+		
+		<div class = "row">	
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel" > Chili Peppers</div>
+		</div>
+
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Artichoke</div>
+		</div>	
+		</div>
+	</div>
+
+	<div class = "box">
+		<div class = "row"> 
+			<div class="sectionImg" onclick="viewInnerList('grains')"></div>		
+			<div class = "rowHeader"> Grains</div>
+		</div>
+	
+		<div id ="grains" class = "sectionContainerHide" style = "color:#1B646B; font-weight:bold;">
+		<div class = "row"> 
+			<input type="checkbox" value="Checkbox">
+			<div id="all" class = "rowlabel"> All </div>	
+		</div>
+		<div class = "rowlabel">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Oats</div>			
+		</div>
+		
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Wheat</div>
+		</div>	
+		
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Nuts</div>
+		</div>
+		
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel"> Potato</div>
+		</div>
+		
+		<div class = "row">
+			<input type="checkbox" value="Checkbox">
+			<div class = "rowlabel" > Corn</div>
+		</div>
+		</div>
+	</div>
+
+
+          <div class = "rightMenu" >  
+			<div class="filter-wrap">
+				
+
+            
+                <h3>Meals</h3>	
+                <hr>		                
+				<p><strong>Select Mealtime</strong></p>
+                <form>
+                	<label><input type="checkbox" name="mealtime" value="breakfast" id="breakfast" />Breakfast</label><br>
+                    <label> <input type="checkbox" name="mealtime" value="lunch" id="lunch" />Lunch</label><br>
+					<label><input type="checkbox" name="mealtime" value="dinner" id="dinner" />Dinner</label><br>
+                    <label> <input type="checkbox" name="mealtime" value="dessert" id="dessert" />Dessert</label><br>
+					<label> <input type="checkbox" name="mealtime" value="snack" id="snack" />Snack</label><br>
+
+                </form>    				
+				
+				
+                <p><strong>Filter by time:</strong></p>
+                <form>
+                    <label><input type="checkbox" name="time" value="10" id="10" /> 10 minutes</label><br>
+                    <label><input type="checkbox" name="time" value="10_30" id="10_30" /> 10-30 minutes</label><br> 
+                    <label><input type="checkbox" name="time" value="30_45" id="30_45" /> 30-45 minutes</label><br>                     
+                    <label><input type="checkbox" name="time" value="45_60" id="45_60" /> 45-60 minutes</label><br>
+                    <label><input type="checkbox" name="time" value="60" id="60" /> > 1 hour</label><br>  
+
+                </form>
+                <p><strong>Dietary Restrictions:</strong></p>
+                <form>
+                	<label><input type="checkbox" name="restrictions" value="dairyfree" id="dairyfree" /> Dairy-Free</label><br>
+                    <label><input type="checkbox" name="restrictions" value="glutenfree" id="glutenfree" /> Gluten-Free</label><br>
+                    <label><input type="checkbox" name="restrictions" value="vegetarian" id="vegetarian" /> Vegetarian</label><br>                  
+                    <label><input type="checkbox" name="restrictions" value="vegan" id="vegan" /> Vegan</label><br>
+                    <label><input type="checkbox" name="restrictions" value="nutallergy" id="nutallergy" /> Nut Allergy</label>
+	
+					
+                </form>  
+	
+                
+                </div>                            
+          	</div>
+          </div>
+
+
+	<div class = "recipePage">
+	<div class = "recipeLeftColumn">
+		<div class = "recipeLeft-Top">
+			<div class = "title"> Spaghetti</div>
+			<hr>
+			<div class = "recipeImg"></div>
+		</div>
+		<div class = "recipeLeft-Bottom">
+			<div class ="addRecipeBook"> Add to Recipe Book </div>
+			<div class = "addCook"> Add to "To Cook" </div>
+			<div class = "seeNeed"> See What I Need </div>
+			<div class = "accountImg"></div>
+		</div>
+	</div>
+	<div class = "recipeRightColumn">
+		<div class = "recipeRight-Top">
+			<div class = "descriptionTitle">Description</div>
+			<hr>
+			<div class = "descriptionWords"> Will the address freak the minimalist? The memorable imperative moves yummy. Yummy expands. The unsuspecting ground steams. How will the employer forecast yummy? The background indents a laboratory.
+			</div> 
+			<div class = "totalTime">Total Time: 25 min </div>
+			<div class = "timeSection">
+				<div class = "minPrep"> Prep: 15 min</div>
+				<div class = "minCook">Cook: 10 min</div>
+			</div>   
+			<div class = "servingSize">Yield: 4 to 6 servings</div>
+			<div class = "level">Level: Intermediate</div>
+			<div class = "link"> <a href="gladyshilerio.com/Healthy_Spaghetti_Recipe">Recipe Link</a> </div>
+		</div>		
+		<div class = "recipeRight-Bottom">
+			<div class = "ingredientList">
+				<div class = "ingredientTitle">Ingredients</div>
+				<hr>
+				<div class = "ingredient">
+					1 pound dry spaghetti
+				</div>
+				<div class = "ingredient">
+					1 pound ground beef
+				</div>
+				<div class = "ingredient">
+					1/4 cup fresh cilantro leaves, chopped
+				</div>
+				<div class = "ingredient">
+					1 cup fresh tomatoes
+				</div>
+				<div class = "ingredient">
+					1/4 cup olive oil
+				</div>
+				<div class = "ingredient">
+					1 large red bell pepper, diced
+				</div>
+				<div class = "ingredient">
+					2 tablespoons tomato paste
+				</div>
+			</div>
+			<div class = "directions">
+				<hr>
+				<div class = "directionTitle"> Directions</div>
+				<div class = "directionWords"> The continent bowl vends the copyright pan. The graphical bookshop twists. The inventor freezes the journalist beneath an am mystery. How does the robust visitor kiss a corrupted sacrifice? Spaghetti denotes any straw pocket beside the anger. Spaghetti isolates the comedy past a victory. Above Spaghetti thinks the wealth. The syndicate brains the chat next to every zero wisdom. Spaghetti pretend.
+				</div>
+			</div>
+		</div> 
+	</div>
+	<div id = "slides" class= "searchBut" onclick="next()"><a href = "mealSort2.html"></a></div>

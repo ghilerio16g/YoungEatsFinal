@@ -1,0 +1,45 @@
+ <!-- when a meal is picked from the meal select page, it leads to this page that shows the results of the search.
+Calls on the search list control and the search for Meal function so that they search can be made. -->
+ <div class="container" ng-controller="searchListCtrl" ng-init="searchForMeal();">
+		<!--titles the page whatever meal type was selected-->
+		<h1>{{mealType}}</h1>
+		<!--Has a search button that when word is entered into the search bar, 
+		it searches through the results and only shows the results that pertain to the word entered into the search bar.-->
+		<label> Search: <input ng-model = "searchText" style = "color:black;"></label>
+		<!-- jumbotron holds the result table -->
+		<div class="jumbotron" style="background-color:#ffffff;color:black;">
+	      <!-- div holds all the rows and columns needed to hold the information-->
+          <div class="table-responsive">
+			<!-- creates a table -->
+            <table class="table">
+              <thead>
+                <tr>
+				  <!-- titles the column "# for the number of the recipe-->
+                  <th>#</th>
+				  <!-- titles the column "title" for the titles of the recipes--> 
+                  <th>Title</th>
+				  <!-- titles the column "Link" for the links of the recipes-->
+                  <th>Link</th>
+				  <!-- titles the column "snippet" for the snippets of the recipes-->
+                  <th>Snippet</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="row in results.items | filter:searchText" ng-class-odd="'row-odd'" ng-class-even="'row-even'" >
+				  <!--gets the index of the result-->
+                  <td>{{$index +1}}</td>
+				  <!-- gets the title of the result-->
+                  <td>{{row.title}}</td>
+				  <!-- gets the link of the result-->
+                  <td><a>{{row.displayLink}} </a></td>
+				  <!-- gets a snippet of the result -->
+                  <td>{{row.snippet}}</td>
+                </tr>                
+              </tbody>
+            </table>
+          </div>
+		</div>
+	</div>
+	
+   
+

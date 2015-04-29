@@ -1,0 +1,49 @@
+<!-- div that contains the contents of the entire find recipe page -->
+<div class="container" ng-controller="searchListCtrl">
+	<!-- Using for here to utilize bootstrap-->
+	  <form class="navbar-form">
+		<!--Title of page-->
+		<h2 class="form-search-heading">Need to find a specific recipe?</h2>
+		<!--Search bar-->
+		<div class="form-group">
+		  <input ng-model="searchText" type="text" id="inputRecipe" placeholder="Search Recipe" class="form-control" required autofocus>
+		</div>
+		<!--search button that when pressed calles on the js function that gets recipe results-->
+		<button type="submit" class="btn btn-primary" ng-click="searchFor()">Search</button>
+	  </form>
+	
+		<!--outputs the search results in a table format--> 
+		<div class="jumbotron" style="background-color:#ffffff;color:black;">
+			  <h2 class="sub-header">Search Results</h2>
+			  <div class="table-responsive">
+				<table class="table">
+				  <thead>
+					<tr>
+					  <!-- titles the column "# for the number of the recipe-->
+					  <th>#</th>
+					  <!-- titles the column "title" for the titles of the recipes--> 
+					  <th>Title</th>
+					  <!-- titles the column "Link" for the links of the recipes-->
+					  <th>Link</th>
+					  <!-- titles the column "snippet" for the snippets of the recipes--> 
+					  <th>Snippet</th>
+					</tr>
+				  </thead>
+				  <tbody>
+				  <!-- gets all the results and makes as many rows needed to show all the recipe results; Assigns every other row a class so there can be
+				  alternating colors.-->
+					<tr ng-repeat="row in results.items" ng-class-odd="'row-odd'" ng-class-even="'row-even'" >
+					  <!--gets the index of the result-->
+					  <td>{{$index +1}}</td>
+					  <!-- gets the title of the result-->
+					  <td>{{row.title}}</td>
+					  <!-- gets the link of the result-->
+					  <td><a>{{row.displayLink}} </a></td>
+					  <!-- gets a snippet of the result -->
+					  <td>{{row.snippet}}</td>
+					</tr>                
+				  </tbody>
+				</table>
+			  </div>
+		</div>
+	</div>

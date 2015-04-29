@@ -1,0 +1,167 @@
+/* Gives the body of the website a background image,
+size, repeat, and a padding of 5%*/
+body{
+	background-image: url("/images/marketPlace.jpg");
+	background-size: 100%;
+	padding-top:5%;
+	 background-repeat: repeat-y;
+}
+/* gives the nav no padding */
+#nav{
+	padding: none;
+}
+/* gives the buttons height 10% and a color */
+#button1, #button2, #button3, #button4, #button5{
+	height:10%;
+	color:#2EACB8;
+	z-index:101;
+}
+/* Changes the color of the buttons when hovered over*/
+#button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover{
+	height:10%;
+	background-height:10%;
+	background-color:#C1E3E6;
+	z-index:101;
+}
+#blind{
+    /*position element so the z-index can be set */
+   position:absolute;
+   /* set z-index so the blind will cover all page content */
+   z-index:9999;
+   /* set the top, left, width and height so the blind covers the browser window */
+   top:0;
+   left:0;
+   width:100%;
+   height:1000%;
+   /* set the background to a suitably dark tone */
+   background-color:#000000;
+   opacity: 0.9;
+}
+ /*makes the p elements for the reviews, recipes, and contact in 
+the about page have a black Josefin Slab font and a large, bold 
+font size*/
+ #recipes p, #reviews p, #contact p{
+	font-family: Josefin Slab;
+	color: black;
+	padding-left: 5%;
+	padding-right: 5%;
+	opacity:1.0;
+	font-weight: bold;
+}
+/*makes the h2 elements for the reviews, recipes, and contact in 
+the about page have a black Josefin Slab font and a large, bold 
+font size*/
+#recipes h2, #reviews h2, #contact h2{
+	font-family: Josefin Slab;
+	color: black;
+	font-size: 200%;
+	border-radius: 5px;
+	opacity:1.0;
+	font-weight: bold;
+	
+
+}
+.rightMenu{
+	/*makes the font josefin slab*/
+	font-family: Josefin Slab;
+}
+.nav ul{
+	/*makes the nav ul inline*/
+	display:inline;
+	/*pads the top, bottom, right, and lefts of the nav ul*/
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+/*makes the h1 elements of the website all 
+have a 20 pixel padding and that specific font family, font size, 
+and font color.*/
+h1{
+	padding: 20px;
+	font-family: Josefin Slab;
+	font-size:	100%;
+	text-decoration:none;
+	color:#248891;
+}
+.chooseFilters ul{
+	/*makes the meal select choices a margin of 50 pixels.*/
+	margin: 50px;
+	/*makes the meal select choices have a top and bottom 
+	padding.*/
+	padding: 50px;
+	padding-bottom: 50px;
+	/*makes the font size 20 pixels large*/
+	font-size: 20px;
+
+}
+.chooseFilters a{
+/*sets the width to 40%*/
+	width: 40%;
+}
+.row-odd{
+/*makes the odd rows in the recipe result table grey and 
+the font color white. Also, aligns the text with the title.*/
+	background-color:grey;
+	color:white;
+	text-align: justify;
+}
+/*makes the odd rows in the recipe result table white. 
+Also, aligns the text with the title.*/
+.row-even{
+	background-color:white;
+	text-align: justify;
+
+}
+
+.chooseFilters li, .tofood{
+	/*makes the display inline*/
+	display: inline;
+	/*makes the boxes have borders*/
+	box-sizing: border-box; 
+	/*has the meals col-md-8 have a 300 pixel width*/
+	meals col-md-8 pull-right
+	width: 300px;
+	/*makes a small solid border*/
+	border: 3px solid #F5F5F7;
+	/*pads the bottom, right, left and top of words to provide space
+	in the box.*/
+	padding-top: 75px;
+	padding-bottom: 75px;
+	padding-right: 10px;
+	padding-left: 10px;
+	/*makes the margin 10 pixels*/
+	margin: 10px;
+	/*changes the background color*/
+	background-color:rgba(235, 230, 236, 0.9);
+	/*makes the boxes a little bit see through*/
+	opacity:0.9;
+	/*makes the font josefin slab*/
+	font-family: Josefin Slab;
+	/*makes the font size large*/
+	font-size:	100%;
+	/*no text decoration*/
+	text-decoration:none;
+}
+/*When mouse hovers over boxes, changes
+the color of the background*/
+.chooseFilters li:hover, .tofood:hover{
+	background-color: #248891;
+	font-family: Josefin Slab;
+	font-size:	100%;
+	text-decoration:none;
+	color:white;
+}
+/*makes it so that when you hover your mouse over the box,
+it does not add any text decoration*/
+.chooseFilters li: active, .chooseFilters li: visited{
+	text-decoration:none;
+	
+}
+.chooseFilters a{
+	text-decoration: none;
+	font-family: Josefin Slab;
+	font-size:	100%;
+	text-decoration:none;
+	color:white;
+}

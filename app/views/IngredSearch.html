@@ -1,0 +1,82 @@
+<!-- containter that holds all content of ingredient search page; Calls on searchListCtrl that has search function -->
+<div class="container" ng-controller="searchListCtrl">
+	<!--title of page -->
+	<h2 class="sub-header">
+		Search by Ingredient 
+	</h2>
+	  <!--Navigation--> 
+	<form class="navbar-form" style="width:300px; height:350px;margin-left:38%;margin-right:50%">
+		<div class = "box">
+			<!-- div that holds both the checkbox and the name of ingredient; Also class is used in css -->
+			<div class = "box1">
+				<!-- checkbox that when checked is put into the search list function-->
+				<input type="checkbox" value="Checkbox" ng-model='dairy' ng-true-value='dairy' ng-false-value=''>
+				<!-- prints out dairy and connects it to the css by class -->
+				<div class="rowHeader"> Dairy</div>
+			</div>
+			<!-- div that holds both the checkbox and the name of ingredient; Also class is used in css -->
+			<div class = "box1"> 
+				<!-- checkbox that when checked is put into the search list function-->
+				<input type="checkbox" value="Checkbox" ng-model='protein' ng-true-value='protein' ng-false-value=''>
+				<!-- prints out dairy and connects it to the css by class -->
+				<div class = "rowHeader"> Protein</div>
+			</div>
+			<!-- div that holds both the checkbox and the name of ingredient; Also class is used in css -->
+			<div class = "box1">
+				<!-- checkbox that when checked is put into the search list function-->
+				<input type="checkbox" value="Checkbox" ng-model='spices' ng-true-value='spices' ng-false-value=''>
+				<!-- prints out dairy and connects it to the css by class -->
+				<div class = "rowHeader"> Spices</div>
+			</div>
+			<!-- div that holds both the checkbox and the name of ingredient; Also class is used in css -->
+			<div class = "box1">
+				<!-- checkbox that when checked is put into the search list function-->
+				<input type="checkbox" value="Checkbox" ng-model='vegetables' ng-true-value='vegetables' ng-false-value=''>	
+				<!-- prints out dairy and connects it to the css by class -->
+				<div class = "rowHeader"> Vegetables</div>	
+			</div>
+			<!-- div that holds both the checkbox and the name of ingredient; Also class is used in css -->
+			<div class = "box1">
+				<!-- checkbox that when checked is put into the search list function-->
+				<input type="checkbox" value="Checkbox" ng-model='grains' ng-true-value='grains' ng-false-value=''>	
+				<!-- prints out dairy and connects it to the css by class -->
+				<div class = "rowHeader"> Grains</div>
+			</div>
+			<!-- search button calls on search by ingredient function when clicked-->
+			<button type="submit" class="btn btn-primary" ng-click="searchByIngred()">Search</button>
+		</div>
+	</form>
+	<!-- jumbotron holds the result table -->
+	<div class="jumbotron" style="background-color:#ffffff;color:black;">
+	  <!-- div holds all the rows and columns needed to hold the information-->
+	  <div class="table-responsive">
+		<!-- creates a table -->
+		<table class="table">
+		  <thead>
+			<tr>
+			  <!-- titles the column "# for the number of the recipe-->
+			  <th>#</th>
+			  <!-- titles the column "title" for the titles of the recipes--> 
+			  <th>Title</th>
+			  <!-- titles the column "Link" for the links of the recipes-->
+			  <th>Link</th>
+			  <!-- titles the column "snippet" for the snippets of the recipes--> 
+			  <th>Snippet</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr ng-repeat="row in results.items" ng-class-odd="'row-odd'" ng-class-even="'row-even'" >
+			  <!--gets the index of the result-->
+			  <td>{{$index +1}}</td>
+			  <!-- gets the title of the result-->
+			  <td>{{row.title}}</td>
+			  <!-- gets the link of the result-->
+			  <td><a>{{row.displayLink}} </a></td>
+			  <!-- gets a snippet of the result -->
+			  <td>{{row.snippet}}</td>
+			</tr>                
+		  </tbody>
+		</table>
+	  </div>
+	</div>
+</div>	

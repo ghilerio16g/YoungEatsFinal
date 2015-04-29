@@ -1,0 +1,49 @@
+ <div class="container" ng-controller="searchListCtrl" ng-init="searchForMeal(breakfast)">
+			<p><strong>Filter by time:</strong></p>
+                <form class="navbar-form">
+                    <label><input type="checkbox" name="time" value="10" id="10" /> 10 minutes</label><br>
+                    <label><input type="checkbox" name="time" value="10_30" id="10_30" /> 10-30 minutes</label><br> 
+                    <label><input type="checkbox" name="time" value="30_45" id="30_45" /> 30-45 minutes</label><br>                     
+                    <label><input type="checkbox" name="time" value="45_60" id="45_60" /> 45-60 minutes</label><br>
+                    <label><input type="checkbox" name="time" value="60" id="60" /> > 1 hour</label><br>  
+
+                </form>
+        
+			<p><strong>Dietary Restrictions:</strong></p>
+                <form class="navbar-form">
+                	<label><input type="checkbox" name="restrictions" value="dairyfree" id="dairyfree" /> Dairy-Free</label><br>
+                    <label><input type="checkbox" name="restrictions" value="glutenfree" id="glutenfree" /> Gluten-Free</label><br>
+                    <label><input type="checkbox" name="restrictions" value="vegetarian" id="vegetarian" /> Vegetarian</label><br>                  
+                    <label><input type="checkbox" name="restrictions" value="vegan" id="vegan" /> Vegan</label><br>
+                    <label><input type="checkbox" name="restrictions" value="nutallergy" id="nutallergy" /> Nut Allergy</label>
+	
+					
+                </form>  
+				
+		<div class="jumbotron" style="background-color:#ffffff;color:black;">  
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Title</th>
+                  <th>Link</th>
+                  <th>Snippet</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="row in results.items" ng-class-odd="'row-odd'" ng-class-even="'row-even'" ng-init="searchForMeal()">
+                  <td>{{$index +1}}</td>
+                  <td>{{row.title}}</td>
+                  <td><a>{{row.displayLink}} </a></td>
+                  <td>{{row.snippet}}</td>
+                </tr>                
+              </tbody>
+            </table>
+          </div>
+		</div>
+	</div>
+	
+        <!-- </div> -->
+
+

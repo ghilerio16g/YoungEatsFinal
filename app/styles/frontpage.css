@@ -1,0 +1,185 @@
+body{
+	background:#545EA8;
+	background-image:url("marketPlace.jpg");
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	font-color: #F5F5F7;
+}
+
+#nav{
+	padding: none;
+}
+.navbar{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	height:10%;
+	list-style:none;
+	background-color: rgba(235, 230, 236, 0.9);
+	color: #248891;
+	border-color:white;
+	border-bottom-style:dotted;
+	border-top-style:none;
+	border-left-style:none;
+	border-right-style:none;
+	border-bottom-width: medium;
+	z-index:100;
+
+}
+#button1, #button2, #button3, #button4, #button5{
+	height:10%;
+	color:#2EACB8;
+	z-index:101;
+}
+#button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover{
+	height:10%;
+	background-height:10%;
+	background-color:#C1E3E6;
+	z-index:101;
+}
+
+ #carousel{
+ 	position: relative;
+ 	list-style: none;
+ 	overflow: hidden;
+ 	padding-left: 10%;
+ 	padding-right: 10%;
+ 	padding-top: 1%;
+ 	padding-bottom: 0%;
+ }
+@font-face {
+	font-family: 'WisdomScriptAJ';
+	src: url('Wisdom-Script.otf');
+	
+}
+#logo{
+	 position: relative;
+  	padding-top: 1%;
+  	padding-bottom: 1%;
+  	height:10%;
+  	list-style: none;
+	background-image:#292F5E;
+	text-align: center;
+	vertical-align: middle;
+	color: #248891;
+	font-family: WisdomScriptAJ;
+	font-size:	150%;
+	border-color:white;
+	border-bottom-style:dotted;
+	border-top-style:none;
+	border-left-style:none;
+	border-right-style:none;
+	border-bottom-width: medium;
+
+}
+
+#modal, #modal2{
+	   border-color: #373D6B;
+   border-style: dotted;
+   border-width: medium;
+}
+#modal .contents, #modal2.contents{
+   padding:24px;
+   padding-left: 72px;
+
+}
+#modal .contents h3{
+	font-family: WisdomScriptAJ;
+	color: #248891;
+}
+#modal .contents a:hover{
+	color:#8ABBBF;
+}
+#blind{
+   /* position element so the z-index can be set */
+   position:absolute;
+   /* set z-index so the blind will cover all page content */
+   z-index:9999;
+   /* set the top, left, width and height so the blind covers the browser window */
+   top:0;
+   left:0;
+   width:100%;
+   height:1000%;
+   /* set the background to a suitably dark tone */
+   background-color:#000000;
+   opacity: 90%;
+}
+#modal .window, #modal2 .window {
+   
+   position:absolute;
+   z-index:10000;
+   width:400px;
+   height:248px;
+   margin-left:-200px;
+   margin-top:-124px;
+   left:-1000px;
+   top:-1000px;
+   background-color:#ffffff;
+   box-shadow:4px 4px 80px #000;
+   -webkit-box-shadow:4px 4px 80px #000;
+   -moz-box-shadow:4px 4px 80px #000;
+}
+#torecipe{
+	font-family: WisdomScriptAJ;
+	font-size: 200%;
+	color: white;
+}
+#torecipe:hover{
+	font-family:WisdomScriptAJ;
+	font-size: 200%;
+	color: #6C72A1;
+	text-decoration: none;
+}
+#about, #recipes, #reviews, #contact{
+	background-color: white;
+	opacity: 0.9;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	height:80%;
+	width: 20%;
+	margin-left: 4%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+
+}
+#about p, #recipes p, #reviews p, #contact p{
+	font-family: Josefin Slab;
+	font-color: black;
+	padding-left: 5%;
+	padding-right: 5%;
+	opacity:1.0;
+}
+#about h4, #recipes h4, #reviews h4, #contact h4{
+	font-family: WisdomScriptAJ;
+	color: #248891;
+	font-size: 200%;
+	border-radius: 5px;
+	opacity:1.0;
+
+}
+#contact{
+	margin-right: 4%;
+}
+#expic{
+	opacity: 1.0;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 5%;
+}
+#cook{
+	font-family: WisdomScriptAJ;
+	color: #248891;
+	font-size: 200%;
+}
+#cook:hover{
+	font-family: WisdomScriptAJ;
+	color: #5B9DA3;
+	font-size: 200%;
+	text-decoration: none;
+}
+

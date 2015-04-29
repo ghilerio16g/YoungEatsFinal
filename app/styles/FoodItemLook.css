@@ -1,0 +1,56 @@
+
+.header{
+	/*makes the header have a font size of 30*/
+	font-size: 30pt;
+	/*makes the font more bold*/
+	font-weight: bolder;
+	/*makes font Josefin Slab*/
+	font-family: Josefin Slab;
+	/*has a right and bottom margin for the header*/
+	margin-right: 65%;
+	margin-bottom: 10px;
+
+}
+
+.box{
+	/*makes the background color of the box that has all the 
+	ingredients this color*/
+	background-color: rgba(235, 230, 236, 0.6);
+	/*makes the box holding the ingredients smaller */
+	background-size: 10% 50%;
+	/*gives the box a small right, left, and bottom margin*/
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	/*pads the bottom so that the search bar is not right at the edge of 
+	the ingredient box.*/
+	padding-bottom: 10px;
+
+
+}
+.rowHeader{
+	/*makes the font Josefin slab, black, and 20 pt */
+	font-family: Josefin Slab;
+	color: black;
+	font-size: 20pt;
+	/*makes the font a little thicker*/
+	font-weight: 800;
+	/*puts the ingredient next to the checkbox.*/
+	display:inline-block;
+	/*bolds the ingredient*/
+	font-weight:bold;
+
+}
+/*makes the ingredients be left-centered*/
+.box1{
+text-align:left;
+padding-left:10px;
+}
+
+/*makes the font color of the ingredient white and puts
+it next to the check box*/
+.rowlabel{
+	color: white;
+	display: inline-block;
+}
